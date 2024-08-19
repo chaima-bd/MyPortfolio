@@ -1,0 +1,328 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    font-weight: bold;
+}
+
+.display-4 {
+    font-size: 3rem;
+    color: #4a90e2;
+}
+
+.lead {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.icon {
+    display: flex;
+    margin-bottom: 5px;
+    height: 20%; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+#mlChart {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+h3 {
+    color: #4a90e2;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #333;
+    font-size: 1rem;
+}
+
+
+
+.myname {
+    color: rgb(89, 136, 255);
+    font-family: Montserrat, sans-serif;
+    font-size :65px;
+    font-style: normal;
+    text-decoration-color: rgb(89, 136, 255);
+}
+.job {
+    color: rgb(22, 40, 113);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-size :30.4px;
+    font-weight :400;
+}
+
+.summary{
+    color: rgb(22, 40, 113);
+    
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-size: 19.2px;
+
+}
+
+  
+.btn {
+    background-color: rgb(191, 209, 255);
+    border-radius: 90px; /* Combined all border-radius properties */
+    box-shadow: none;
+    box-sizing: border-box;
+    color: rgb(89, 136, 255);
+    cursor: pointer;
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Vertically center text */
+    justify-content: center; /* Horizontally center text */
+    fill: rgb(255, 255, 255);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    height: 46px;
+    letter-spacing: 0.5px;
+    line-height: 16px;
+    padding: 10px 30px; /* Simplified padding shorthand */
+    text-align: center;
+    text-decoration: none; /* Simplified text decoration properties */
+    text-size-adjust: 100%;
+    text-transform: uppercase;
+    text-underline-offset: 3px;
+    transition: all 0.3s ease;
+    width: 170px; /* Adjusted for simplicity */
+    -webkit-font-smoothing: antialiased;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+  .btn:hover {
+    background-color: rgb(159, 183, 255); /* Adjusted hover color */
+  }
+  
+  
+
+.services-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+/* Existing blockquote styles */
+blockquote {
+    font-size: 1.75rem;
+    font-weight: 300;
+    color: #333;
+    text-align: center;
+    margin: 0 auto 40px;
+    max-width: 800px;
+    line-height: 1.4;
+    quotes: "“" "”" "‘" "’"; /* Specify the types of quotes */
+    position: relative; /* Ensure that ::before and ::after are positioned correctly */
+    overflow: hidden; /* Ensure the shine effect is confined within the blockquote */
+}
+
+/* Shine effect */
+blockquote::before,
+blockquote::after {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 300%;
+    height: 300%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
+    transform: skewX(-20deg);
+    transition: transform 0.6s ease;
+    z-index: 1; /* Ensure it appears above the text */
+    pointer-events: none; /* Ensure it doesn't interfere with cursor events */
+}
+
+/* Shine effect on hover */
+blockquote:hover::before,
+blockquote:hover::after {
+    top: 0;
+    left: 0;
+    transform: skewX(-20deg) translateX(100%);
+}
+
+/* Change quote color */
+blockquote p::before,
+blockquote p::after {
+    color: yellow; /* Change quote color to yellow */
+}
+
+/* Existing quote styles */
+blockquote p::before {
+    box-sizing: border-box;
+    content: open-quote;
+    display: inline;
+    font-family: Montserrat, sans-serif;
+    font-size: 80px;
+    font-weight: 300;
+    height: auto;
+    line-height: 8px;
+    margin-right: 20px;
+    quotes: "“" "”" "‘" "’";
+    text-align: center;
+    text-size-adjust: 100%;
+    vertical-align: -32px;
+    width: auto;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+blockquote p::after {
+    box-sizing: border-box;
+    content: close-quote;
+    display: inline;
+    font-family: Montserrat, sans-serif;
+    font-size: 80px;
+    font-weight: 300;
+    height: auto;
+    line-height: 8px;
+    margin-left: 20px;
+    quotes: "“" "”" "‘" "’";
+    text-align: center;
+    text-size-adjust: 100%;
+    vertical-align: -56px;
+    width: auto;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-top: 20px;
+}
+
+.service-box {
+    background: #fff;
+    border: 1px solid #dee2e6;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+}
+
+.service-icon {
+    width: 60px;
+    height: 60px;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+}
+
+p {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.qt {
+    box-sizing: border-box;
+    color: rgb(85, 85, 85);
+    display: inline;
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    height: auto;
+    line-height: 28.5714px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-bottom: 10px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 10px;
+    quotes: "“" "”" "‘" "’";
+    text-align: center;
+    text-size-adjust: 100%;
+    unicode-bidi: isolate;
+    width: auto;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  .about-section {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #d0e1eb;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-section .about-title {
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #444;
+    border-bottom: 1px solid #444;
+    display: inline-block;
+}
+
+.about-section p {
+    color: #444;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.about-section {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+   
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 20px;
+}
+
+.signature {
+    font-family: 'Pacifico', cursive;                                     
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 20px;
+}
+
+.about-section img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10%;
+}
+
+.skills-icon {
+    width: 50px;
+    height: 50px;
+}
+.skills-title {
+    font-weight: bold;
+}
+.skills-section {
+    padding: 60px 0;
+}
+.skills-section hr {
+    margin: 20px 0;
+    width: 50px;
+    border-top: 2px solid #333;
+}

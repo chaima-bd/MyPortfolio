@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulting Analyst</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow p-2 mb-3 bg-body rounded">
+        <!-- <a class="navbar-brand" href="#">CHAIMAA BOUABD</a> -->
+         <div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end container-fluid a ul li" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About me</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Skills <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact me</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+
+    <!-- Main Section -->
+    <div class="container text-center mt-5">
+        <h1 class="display-4">Chaimaa BOUABD</h1>
+        <p class="lead">Junior ML/Data Scientist</p>
+        <p>Collect, process, analyse and present data - from supporting everyday business decisions to driving global change</p>
+        <a href="#" class="btn btn-primary">Get in Touch</a>
+
+        <div class="row mt-5">
+            <div class="col-md-3">
+                <div class="icon">
+                    <canvas id="collectChart"></canvas>
+                </div>
+                <h3>Collect</h3>
+                <p>Coming from a background in <strong>social psychology</strong> and <strong>social research</strong>, I have theoretical and practical knowledge in <strong>survey design</strong> and impact assessment. I have <strong>data collection</strong> and management experience with <strong>Kobo Toolbox, Qualtrics, Commcare</strong> and <strong>Airtable</strong>.</p>
+            </div>
+            <div class="col-md-3">
+                <div class="icon">
+                    <canvas id="processChart"></canvas>
+                </div>
+                <h3>Process</h3>
+                <p>As an <strong>Alteryx</strong> Designer Advanced Certified analyst I can offer support on improving existing workflows and creation of new processes, covering <strong>data transformation, unification, spatial and predictive analysis</strong>, and more.</p>
+            </div>
+            <div class="col-md-3">
+                <div class="icon">
+                    <canvas id="visualiseChart"></canvas>
+                </div>
+                <h3>Visualise</h3>
+                <p>I am a <strong>Tableau</strong> Desktop Certified Professional with extensive knowledge of <strong>data visualisation best-practices</strong>. I have experience creating <strong>interactive tools and static infographics</strong> that can be consumed online or in print. Besides Tableau I have worked primarily with <strong>Power BI</strong> and <strong>Flourish</strong>.</p>
+            </div>
+            <div class="col-md-3">
+                <div class="icon">
+                    <canvas id="mlChart"></canvas>
+                </div>
+                <h3>Machine Learning</h3>
+                <p>I have expertise in applying <strong>machine learning</strong> algorithms to various business challenges, including <strong>classification, regression, clustering,</strong> and <strong>natural language processing (NLP)</strong>. My experience includes working with tools such as <strong>scikit-learn, TensorFlow,</strong> and <strong>PyTorch</strong>.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
