@@ -352,6 +352,24 @@ a:hover {
     width: 100%;
     height: auto;
 }
+
+
+/*style for the footer */
+.social-icons a {
+    color: white; /* Change icon color */
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #d0e1eb; /* Hover effect color */
+}
+
+footer p {
+    color: #0083d5; /* Text color for the footer */
+    margin-bottom: 0; /* Remove bottom margin */
+    font-size: 14px; /* Adjust font size */
+}
+
 /* Go to Top Button */
 #goToTopBtn {
     display: none; /* Hidden by default */
@@ -365,7 +383,7 @@ a:hover {
     color: black; /* Text color */
     cursor: pointer; /* Pointer/hand icon */
     padding: 15px; /* Some padding */
-    border-radius: 50%; /* Circular button */
+    border-radius: 30%; /* Circular button */
     font-size: 18px; /* Increase font size */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
     transition: all 0.3s ease; /* Smooth transition */
