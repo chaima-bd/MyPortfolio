@@ -10,10 +10,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- Link to your local Bootstrap CSS file -->
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-cloud/1.2.5/d3.layout.cloud.min.js"></script>
+
    
 </head>
 
-
+<!--  -->
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light shadow p-2 mb-3 bg-body rounded">
@@ -50,7 +53,6 @@
         </div>
     </nav>
     
-    
 
     <!-- Main Section -->
     <div class="container text-center mt-5 justify-content-center" id="home">
@@ -66,48 +68,52 @@
         <div class="button-container">
             <button class="btn" ><a href="#Contact me">Get in Touch</a></button>
         </div>
-        
-        
-        
 
         <div class="row mt-3 justify-content-center">
-            <!-- Add your chart sections here -->
+            <!-- Word Cloud Section -->
             <div class="col-md-4">
-                <div class="icon  mb-3  d-flex justify-content-center">
-                    <img src="images/web.jpg" alt="Front-end Web Developer" >
+                <div class="icn mb-4 d-flex justify-content-center">
+                    <img src="images/ui-design.png" alt="Description of SVG" class="iconcloud">
                 </div>
                 <h3>Web Development</h3>
                 <p>I create responsive and user-friendly websites using <strong>HTML, CSS, JavaScript,</strong> and frameworks like <strong>React</strong> and <strong>Bootstrap</strong>. My experience includes full-stack development with <strong>Node.js</strong> and database integration using <strong>MongoDB</strong>.</p>
             </div>
-            
+        
+            <!-- Machine Learning Chart Section -->
             <div class="col-md-4 text-center">
-                <div class="icon  mb-3 d-flex justify-content-center">
-                    <canvas id="mlChart"></canvas>
+                <div class="icn mb-4 d-flex justify-content-center">
+                    <img src="images/deep-learning.png" alt="Description of SVG" class="iconcloud">
                 </div>
                 <h3>Machine Learning</h3>
                 <p>I develop machine learning models using <strong>Python</strong> and libraries like <strong>TensorFlow</strong> and <strong>scikit-learn</strong>. My expertise includes supervised and unsupervised learning, neural networks, and model optimization techniques.</p>
             </div>
-            
+        
+            <!-- Data Analysis Chart Section -->
             <div class="col-md-4 text-center">
-                <div class="icon mb-3 d-flex justify-content-center">
-                    <canvas id="dataAnalysisChart"></canvas>
+                <div class="icn mb-4 d-flex justify-content-center">
+                    <img src="images/exploration.png" alt="Description of SVG" class="iconcloud">
                 </div>
                 <h3>Data Analysis</h3>
                 <p>I perform in-depth data analysis using tools like <strong>Tableau, Python,</strong> and <strong>Pandas</strong>. My work involves cleaning, transforming, and visualizing data to extract actionable insights that drive decision-making.</p>
             </div>
         </div>
+        
     </div>
 
 
     <!--About me Section -->
-    <div class="about-section container mt-5" id='About me'>
+    <div class="mt-5 about-section container " id='About me'>
         <div class="row">
             <div class="col-md-8">
                 <h2 class="about-title">ABOUT ME</h2>
-                <p>Hi, my name is Claudia and I work remotely as a <strong>freelance data scientist</strong>. I hold a Bachelor's and Master's degree in science (Business Analytics, VU University Amsterdam).</p>
-                <p>Since I was young, I have always enjoyed solving puzzles. So that’s how I look at big data sets: to me, it is one big puzzle I want to solve. Finding patterns nobody else sees is the challenge to me.</p>
-                <p>I have been working as a data scientist for <strong>more than ten years</strong> with experience in transport, logistics, and retail. I have worked for more than 25 companies, which gives me the ability to translate complex questions into understandable insights.</p>
-                <p>Do you want to work together? Please reach out to me by e-mail.</p>
+                <section id="about-me">
+                    <h4>🌟 Hi, I'm Chaimaa Bouabd</h4>
+                    <p>A fresh graduate with a Master’s degree in Artificial Intelligence from Marrakech. Passionate about data science, I love solving complex challenges and uncovering hidden patterns.</p>
+                    <p>My academic projects include developing AI-based fashion recommendation systems, graph generation using LLMs, and mobile apps for object detection and disease prediction. I've also earned several certificates in advanced data science topics.</p>
+                    <p>I’m eager to join an innovative team and contribute to exciting projects. Feel free to contact me at <a href="mailto:chamabouabd@gmail.com">chamabouabd@gmail.com</a>.</p>
+                  </section>
+                  
+                  
                 <p class="signature">Chaimaa Bouabd</p>
             </div>
             <div class="col-md-4">
@@ -120,73 +126,107 @@
     <!-- Skills section -->
     <section class="skills-section">
         <div class="container">
-            <div class="text-center mb-5">
-                <blockquote class="blockquote">
-                    <p class="mb-0">"I want to help others to make the right decisions, data-driven decisions"</p>
-                </blockquote>
-            </div>
     
             <h2 class="text-center">Skills</h2>
             <hr class="mx-auto">
     
             <p class="text-center">
-                As a freelance data analyst and data scientist, I translate data into valuable and comprehensible insights. My goal is to improve results, make the right decisions and save costs.
-                <br><br>
-                I am experienced in machine learning, supervised and unsupervised algorithms and use data visualization techniques to present the results. I use SQL, R, Python, QlikView, and Tableau for my data projects.
-            </p>
+                Here’s a glimpse into the technical skills and tools I leverage to tackle complex data challenges
+            </p>       
+               
     
             <div class="row mt-5 justify-content-md-center">
-                <div class="col-md-5 mb-4">
+                <div class="col-md-4 mb-4">
                     <div class="d-flex">
-                        <img src="icon1.png" alt="Data Analysis" class="skills-icon me-3">
+                        <img src="images/coding.png" alt="Machine Learning Frameworks:" class="skills-icon me-3">
                         <div>
-                            <h5 class="skills-title">Data analysis</h5>
-                            <p>I am specialized in analyzing data. Results, trends and recommendations are clearly presented in reports or tools. (<a href="#">example</a>)</p>
+                            <h5 class="skills-title">Machine Learning Frameworks:</h5>
+                            <p>I have experience using frameworks such as scikit-learn, TensorFlow, PyTorch, and libraries like NumPy,
+                                 Pandas, Matplotlib, and Seaborn for developing and evaluating machine learning models. (<a href="#">example</a>)</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 mb-4">
+                <div class="col-md-4 mb-4">
                     <div class="d-flex">
-                        <img src="icon2.png" alt="Advice and Coaching Projects" class="skills-icon me-3">
+                        <img src="images/code.png" alt="Programming Languages:" class="skills-icon me-3">
                         <div>
-                            <h5 class="service-title">Advice and coaching projects</h5>
-                            <p>Before and during data-related projects, I give advice on the progress of the project and I coach data analysts. (<a href="#">example</a>)</p>
+                            <h5 class="service-title">Programming Languages: </h5>
+                            <p>I practice Python and R for data analysis and model building, along with JavaScript and SQL
+                                 for data manipulation and web development. (<a href="#">example</a>)</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 mb-4">
+                <div class="col-md-4 mb-4">
                     <div class="d-flex">
-                        <img src="icon3.png" alt="Data Analytics" class="skills-icon me-3">
+                        <img src="images/ui-design.png" alt="Web Development Frameworks:" class="skills-icon me-3">
                         <div>
-                            <h5 class="skills-title">Data analytics</h5>
-                            <p>Get more value from your data with prediction models and machine learning techniques, for example by predicting behavior or targeting the right customer. (<a href="#">example</a>)</p>
+                            <h5 class="skills-title">Web Development Frameworks</h5>
+                            <p>I have experience with React.js, Django, and Laravel for developing interactive and efficient web applications.(<a href="#">example</a>)</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 mb-4">
+                <div class="col-md-4 mb-4">
                     <div class="d-flex">
-                        <img src="icon4.png" alt="Interactive Infographics" class="skills-icon me-3">
+                        <img src="images/deep-learning.png" alt="Machine Learning Models:" class="skills-icon me-3">
                         <div>
-                            <h5 class="skills-title">(Interactive) infographics</h5>
-                            <p>Present your data in an inspiring way by using an infographic rather than a piece of text. I create interactive infographics which can be used internally or publicly. (<a href="#">example</a>)</p>
+                            <h5 class="skills-title">Machine Learning Models</h5>
+                            <p>I have experience working with various machine learning models, including supervised learning
+                                 (e.g., KNN, SVM, RNN, CNN) and unsupervised learning (e.g., k-Means, DBSCAN).(<a href="#">example</a>)</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 mb-4">
+                <div class="col-md-4 mb-4">
                     <div class="d-flex">
-                        <img src="icon5.png" alt="Dashboards" class="skills-icon me-3">
+                        <img src="images/data-cleaning.png" alt="Data Preprocessing" class="skills-icon me-3">
                         <div>
-                            <h5 class="skills-title">Dashboards</h5>
-                            <p>Dashboards show the most recent results in an interactive way. By clicking and drilling, you will examine trends and patterns yourself. (<a href="#">example</a>)</p>
+                            <h5 class="skills-title">Data Preprocessing</h5>
+                            <p>I practice data cleaning and preprocessing to prepare data for analysis and model training, ensuring accuracy and effectiveness in machine learning tasks.
+                                (<a href="#">example</a>)</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 mb-4">
+                <div class="col-md-4 mb-4">
                     <div class="d-flex">
-                        <img src="images/icon6.png" alt="Front-end Web Developer" class="skills-icon me-3">
+                        <img src="images/technology.png" alt="Robotic Process Automation" class="skills-icon me-3">
                         <div>
-                            <h5 class="skills-title">Front-end web developer</h5>
-                            <p>As a web developer, I help to design and create the perfect website for starters and freelancers. The website is optimized for desktop and smartphone. (<a href="#">example</a>)</p>
+                            <h5 class="skills-title">Robotic Process Automation</h5>
+                            <p>I have experience with Robomotion for automating repetitive tasks and processes, enhancing efficiency in data-related workflows.(<a href="#">example</a>)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="d-flex">
+                        <img src="images/api.png" alt="LLM APIs" class="skills-icon me-3">
+                        <div>
+                            <h5 class="skills-title">LLM APIs</h5>
+                            <p>I have experience working with large language model APIs such as Vertex AI and Mistral 7B for integrating advanced AI capabilities into applications. (<a href="#">example</a>)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="d-flex">
+                        <img src="images/exploration.png" alt="Data Visualization" class="skills-icon me-3">
+                        <div>
+                            <h5 class="skills-title">Data Visualization:</h5>
+                            <p>I practice creating meaningful visualizations using tools and libraries like Matplotlib and Seaborn to communicate data insights effectively.(<a href="#">example</a>)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="d-flex">
+                        <img src="images/competence.png" alt="Agile Methodologies & Project Management" class="skills-icon me-3">
+                        <div>
+                            <h5 class="skills-title">Agile Methodologies & Project Management</h5>
+                            <p>I have experience using Agile methodologies, including Kanban, to manage and streamline project workflows, with expertise in tools like Jira for tracking progress and collaboration.(<a href="#">example</a>)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="d-flex">
+                        <img src="images/cloud-storage.png" alt="Model Deployment" class="skills-icon me-3">
+                        <div>
+                            <h5 class="skills-title">Deployment</h5>
+                            <p>I have experience in deployment processes, including creating IAM roles, S3 buckets, and EC2 instances. I use LocalStack to simulate AWS services locally, ensuring a seamless and cost-effective development environment.(<a href="#">example</a>)</p>
                         </div>
                     </div>
                 </div>
@@ -201,11 +241,8 @@
             
             <h2 class="mt-4">Projects</h2>
             <p class="lead mt-3">
-                As a freelance data analyst and data scientist, I translate data into valuable and comprehensible insights. 
-                My goal is to improve results, make the right decisions and save costs.
-                I am experienced in machine learning, supervised and unsupervised algorithms and use data visualization techniques 
-                to present the results. I use SQL, R, Python, QlikView and Tableau for my data projects.
-            </p>
+                Through my Master's program and dedicated self-training, I took on real-world challenges that allowed me to transform theoretical knowledge into 
+                impactful, hands-on experience. Here are some of the key projects that showcase my journey            </p>
             <div class="row mt-5">
                 <div class="col-md-4">
                     <div class="service-box">
@@ -260,14 +297,98 @@
             </div>
         </div>
     </section>
+<!-- Certificate Section -->
+<div class="container my-5">
+    <h2 class="text-center mb-4">Certificates</h2>
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-5 col-lg-3">
+            <div class="card certificate-card">
+                <img src="Certificates/Advance Learning Algorithms certificate.jpg" alt="Advanced Learning Algorithms" data-bs-toggle="modal" data-bs-target="#certificateModal1">
+                <div class="expand-icon" data-bs-toggle="modal" data-bs-target="#certificateModal1">&#x1F50E;</div>
+            </div>
+            <div class="certificate-caption">Advanced Learning Algorithms</div>
+        </div>
+        <div class="col-md-5 col-lg-3">
+            <div class="card certificate-card">
+                <img src="Certificates/EDA For machine learning  Certificate.jpg" alt="Exploratory Data Analysis (IBM)" data-bs-toggle="modal" data-bs-target="#certificateModal2">
+                <div class="expand-icon" data-bs-toggle="modal" data-bs-target="#certificateModal2">&#x1F50E;</div>
+            </div>
+            <div class="certificate-caption">Exploratory Data Analysis for ML (IBM)</div>
+        </div>
+        <div class="col-md-5 col-lg-3">
+            <div class="card certificate-card">
+                <img src="Certificates/Technical Support Fundamentals certificate.jpg" alt="Technical Support Fundamentals (Google)" data-bs-toggle="modal" data-bs-target="#certificateModal3">
+                <div class="expand-icon" data-bs-toggle="modal" data-bs-target="#certificateModal3">&#x1F50E;</div>
+            </div>
+            <div class="certificate-caption">Technical Support Fundamentals (Google)</div>
+        </div>
+        <div class="col-md-5 col-lg-3">
+            <div class="card certificate-card">
+                <img src="Certificates/Into to Generative AI  certification.jpg" alt="Introduction to Generative AI" data-bs-toggle="modal" data-bs-target="#certificateModal4">
+                <div class="expand-icon" data-bs-toggle="modal" data-bs-target="#certificateModal4">&#x1F50E;</div>
+            </div>
+            <div class="certificate-caption">Introduction to Generative AI</div>
+        </div>
+    </div>
+</div>
 
+<!-- Modal 1 -->
+<div class="modal fade" id="certificateModal1" tabindex="-1" aria-labelledby="certificateModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="Certificates/Advance Learning Algorithms certificate.jpg" alt="Advanced Learning Algorithms">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="certificateModal2" tabindex="-1" aria-labelledby="certificateModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="Certificates/EDA For machine learning  Certificate.jpg" alt="Exploratory Data Analysis for ML (IBM)">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="certificateModal3" tabindex="-1" aria-labelledby="certificateModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="Certificates/Technical Support Fundamentals certificate.jpg" alt="Technical Support Fundamentals (Google)">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 4 -->
+<div class="modal fade" id="certificateModal4" tabindex="-1" aria-labelledby="certificateModal4Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="Certificates/Into to Generative AI  certification.jpg" alt="Introduction to Generative AI">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Go to Top Button -->
+<button onclick="topFunction()" id="goToTopBtn" title="Go to Top">&#x25B2;</button>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <script src="scripts.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqcloud/1.0.4/jqcloud.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqcloud/1.0.4/jqcloud.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    
 
 </body>
 

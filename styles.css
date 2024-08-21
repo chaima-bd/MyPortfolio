@@ -20,22 +20,13 @@ body {
     margin-bottom: 20px;
 }
 
-.icon {
-    display: flex;
-    margin-bottom: 5px;
-    height: 20%; /* Adjust height as needed */
-    overflow: hidden;
+.icn{
+    height: 18vh; /* Adjust height as needed */
 }
-
-#mlChart {
-    width: 100%;
-    height: 100%;
-}
-
-
 
 h3 {
-    color: #4a90e2;
+    /*color: #4a90e2;*/
+    color: rgb(22, 40, 113);
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -44,8 +35,6 @@ p {
     color: #333;
     font-size: 1rem;
 }
-
-
 
 .myname {
     color: rgb(89, 136, 255);
@@ -118,7 +107,7 @@ p {
 blockquote {
     font-size: 1.75rem;
     font-weight: 300;
-    color: #333;
+    color: #363434;
     text-align: center;
     margin: 0 auto 40px;
     max-width: 800px;
@@ -155,7 +144,7 @@ blockquote:hover::after {
 /* Change quote color */
 blockquote p::before,
 blockquote p::after {
-    color: yellow; /* Change quote color to yellow */
+    color: rgb(255, 243, 76); /* Change quote color to yellow */
 }
 
 /* Existing quote styles */
@@ -199,7 +188,8 @@ blockquote p::after {
 h2 {
     font-size: 2rem;
     font-weight: 700;
-    color: #333;
+    color: rgb(255, 76, 76) ; /*#333;*/
+    
     margin-top: 20px;
 }
 
@@ -265,6 +255,7 @@ a:hover {
     width: auto;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
+
   
   .about-section {
     font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -291,11 +282,9 @@ a:hover {
 
 .about-section {
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-   
     font-size: 1.5rem;
     color: #333;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 .signature {
@@ -325,4 +314,64 @@ a:hover {
     margin: 20px 0;
     width: 50px;
     border-top: 2px solid #333;
+}
+
+.certificate-card {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.certificate-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.certificate-card:hover img {
+    transform: scale(1.05);
+}
+
+.expand-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #007bff;
+}
+
+.certificate-caption {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.modal img {
+    width: 100%;
+    height: auto;
+}
+/* Go to Top Button */
+#goToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom-right corner */
+    right: 20px;
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none;
+    background-color: #d0e1eb; /* Background color */
+    color: black; /* Text color */
+    cursor: pointer; /* Pointer/hand icon */
+    padding: 15px; /* Some padding */
+    border-radius: 50%; /* Circular button */
+    font-size: 18px; /* Increase font size */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+#goToTopBtn:hover {
+    background-color: #b2c6d4; /* Darker background on hover */
+    transform: scale(1.1); /* Slightly increase size on hover */
 }
