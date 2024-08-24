@@ -352,6 +352,83 @@ a:hover {
     width: 100%;
     height: auto;
 }
+/* Blog Style */
+.blog-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Center content vertically */
+    min-height: 150px; /* Reduce the minimum height */
+    padding: 10px; /* Add padding for a compact look */
+}
+
+.blog-card:hover {
+    transform: translateY(-5px); /* Subtle hover effect */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    width: 45%; /* Reduce image width */
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.card-img-left {
+    width: 25%; /* Reduce image width */
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px; /* Reduce padding */
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 1.15rem; /* Slightly smaller font size */
+    margin-bottom: 10px; /* Reduce margin */
+}
+
+.card-text {
+    color: #555;
+    font-size: 0.95rem; /* Smaller font size */
+    margin-bottom: 10px; /* Reduce margin */
+}
+
+.card-footer {
+    background-color: transparent;
+    border-top: none;
+    font-size: 0.8rem; /* Smaller font size */
+    align-self: flex-end;
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+.placeholder-card {
+    background-color: #f8f9fa;
+    border: 1px dashed #ddd;
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Center content vertically */
+    min-height: 150px; /* Reduce the minimum height */
+    padding: 10px; /* Add padding for a compact look */
+}
+
+.placeholder-card .card-title {
+    color: #aaa;
+    font-size: 1.15rem; /* Slightly smaller font size */
+}
+
+.placeholder-card .card-text {
+    color: #999;
+    font-size: 0.95rem; /* Smaller font size */
+}
 
 
 /*style for the footer */
