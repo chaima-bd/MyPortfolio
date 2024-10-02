@@ -470,3 +470,51 @@ footer p {
     background-color: #b2c6d4; /* Darker background on hover */
     transform: scale(1.1); /* Slightly increase size on hover */
 }
+
+
+.projects-section {
+    background-color: #f8f9fa;
+    padding: 4rem 0;
+}
+
+.project-card {
+    background-color: #ffffff;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.project-card p {
+    margin-bottom: 1rem;
+}
+
+.tags {
+    margin-bottom: 1rem;
+}
+
+.tag {
+    display: inline-block;
+    background-color: rgb(208, 225, 235);
+    color: rgb(0, 0, 0);
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.text-primary {
+    color: #000000;
+}
+
+.bg-dark {
+    background-color: #f8f9fa;
+}
